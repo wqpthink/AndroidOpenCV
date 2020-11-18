@@ -1,1 +1,1 @@
-# android_opencv430_sdk
+opencv 4.3.0 安卓版本编译库
