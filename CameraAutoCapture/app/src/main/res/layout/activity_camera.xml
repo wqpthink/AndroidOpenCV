@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.camerakit.CameraKitView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:keepScreenOn="true"
+        app:camera_focus="continuous"
+        app:camera_permissions="camera"/>
+
+    <ImageView
+        android:id="@+id/take_camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/take_camera"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="95dp"/>
+
+    <ImageView
+        android:id="@+id/take_back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/take_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="95dp"
+        android:layout_marginLeft="25dp"/>
+
+    <ImageView
+        android:id="@+id/continuity_camera"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/take_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="95dp"
+        android:layout_marginRight="25dp"/>
+
+</RelativeLayout>
